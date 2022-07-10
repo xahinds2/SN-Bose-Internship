@@ -1,0 +1,222 @@
+.speedDial {
+  position: fixed;
+  right: 1.2vmax;
+  top: 5px;
+}
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+a:link {text-decoration: none}
+a:visited {text-decoration: none}
+a:hover {text-decoration: none}
+a:active {text-decoration: none}
+
+.ecom__navbar{
+    z-index: 1;
+    background: rgb(3,3,3);
+    background: linear-gradient(90deg, rgba(3,3,3,0.9) 39%, rgba(125,6,109,0.9) 81%, rgba(131,58,180,0.9) 100%); 
+    top: 0;
+    position: sticky;
+    padding: 0.5rem 1rem;
+    height: 50px !important;
+    backdrop-filter: blur(1px);
+    /* background-color: rgba(255, 255, 255, 0.10); */
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ecom__navbar-links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ecom__navbar-links_logo {
+    margin-right: 1rem;
+}
+.ecom__navbar-links_logo img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.ecom__navbar-links_container {
+
+     display: flex;
+     flex-direction: row;
+     
+}
+.links {
+  color: white;
+  border: 3px;
+  margin: 10px;
+  font-family:'Courier New', monospace !important;
+  font-size: 18px !important;
+  text-decoration: double;
+}
+.links:hover {
+  color: blueviolet;
+}
+.links-right {
+  position: fixed;
+  right: 1.2vmax;
+  top: 14px;
+    font-family: 'Courier New', monospace;
+    color: white;
+
+    font-weight: 1000;
+    /* width: 130px; */
+    background: tomato;
+    padding: 0.5rem 1rem;
+    min-width: 50px;
+    font-size: 1.2rem;
+    border: 0ch;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0s;
+}
+.links-right:hover {
+  background: white;
+  color: brown;
+}
+.links-right2 {
+  font-family: 'Courier New', monospace;
+  color: white;
+  font-weight: 500;
+  /* width: 130px; */
+  background: tomato;
+  padding: 0.5rem 1rem;
+  min-width: 50px;
+  font-size: 1.2rem;
+  border: 0ch;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0s;
+}
+.links-right2:hover {
+  background: white;
+  color: brown;
+}
+
+.ecom__navbar-menu_container-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.ecom__navbar-links_container p,
+.ecom__navbar-menu_container-links p {
+    color: white ;
+    text-decoration: none !important;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    margin: 0 1rem;
+    cursor: pointer;
+
+}
+
+.ecom__navbar-sign {
+    display: flex;
+    flex-direction: flex-end;
+    align-items: center ;
+}
+
+
+.ecom__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.ecom__navbar-menu svg {
+    cursor: pointer;
+}
+
+.ecom__navbar-menu_container{
+    display: flex;
+    width: 200px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
+    padding: 1rem 0.5rem; 
+    position: absolute;
+    top: 40px;
+    background-image: url(../../../images/vector3.jpg);
+    left : 0;
+    margin-top: 1rem;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow:  0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.ecom__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.ecom__navbar-menu_container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width : 1050px){
+  .ecom__navbar{
+    justify-content: flex-start;
+  }
+    .ecom__navbar-links_container {
+      display: none;
+    }
+    .ecom__navbar-menu {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width : 600px){
+    .ecom__navbar-menu_container{
+        top : 20px;
+    }
+    .links-right{
+      display: none;
+    }
+    .ecom__navbar-links_logo {
+      display: none;
+    }
+    .ecom__navbar-menu_container-links-sign{
+        display: block;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+    }
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
